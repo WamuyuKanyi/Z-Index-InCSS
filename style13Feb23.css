@@ -1,0 +1,43 @@
+/* z-index----z-axies
+position: static -- does not work */
+/* The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).
+
+Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.(closer to you)  */
+
+img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.banner{
+  margin: 20px;
+  width: 80vw;
+  height: 70vh;
+  border: 5px solid red;
+  position: relative;
+}
+
+.one{
+  top: 0;
+  left:0 ;
+  z-index: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.two{
+  top: 10%;
+  left:10% ;
+  z-index: 1;
+}
+
+.three{
+  top: 20%;
+  left: 20% ;
+  z-index: 2;
+}
